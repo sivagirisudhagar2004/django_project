@@ -13,7 +13,23 @@ def index(request):
 def users(request):
     return HttpResponse("<h1>This is users page</h1>")
 """
+"""""
 def home(request):
     return render(request,"Home.html",{'Name':'Sivagiri'})
+"""
 
+def home (request):
+    """
+    result = os.path.join(BASE_DIR,"templates")
+    print(result)
+    """
+    return render(request,"home.html",{'Name':'Sathya'})
+
+def product(request):
+    mobile = int(request.GET["mobile"])
+    keyboard = int(request.GET["keyboard"])
+    monitor = int(request.GET["monitor"])
+    price = (mobile + keyboard + monitor)
+
+    return render(request,"result.html",{'price':price})
 
