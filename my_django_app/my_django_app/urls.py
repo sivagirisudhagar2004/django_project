@@ -21,10 +21,4 @@ from My_Application import views
 urlpatterns = [
     path('',views.home),
     path('product',views.product),
-     """""
-    path('Index',views.index),
-    path('Users',views.users),
-    path('admin/', admin.site.urls),
-
-    """""
 ]
