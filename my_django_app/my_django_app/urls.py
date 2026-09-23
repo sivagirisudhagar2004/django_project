@@ -19,8 +19,8 @@ from django.urls import path
 from My_Application import views
 
 urlpatterns = [
-    path('product',views.product),
     path('',views.home),
+    path('product',views.product),
      """""
     path('Index',views.index),
     path('Users',views.users),
