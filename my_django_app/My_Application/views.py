@@ -17,12 +17,12 @@ def users(request):
 def home(request):
     return render(request,"Home.html",{'Name':'Sivagiri'})
 """
-
+"""""
 def home (request):
-    """
+    
     result = os.path.join(BASE_DIR,"templates")
     print(result)
-    """
+
     return render(request,"home.html",{'Name':'Sathya'})
 
 def product(request):
@@ -33,3 +33,6 @@ def product(request):
 
     return render(request,"result.html",{'price':price})
 
+"""""
+def home(request):
+    return render(request,"home_1.html")
