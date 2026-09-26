@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'}%">
 </head>
+
 <body>
     {% block content %}
-    <form action="product" autocomplete="off">
+    <form action="product" autocomplete="off" >
         <h1>
             Product 
         </h1>
@@ -18,5 +22,31 @@
 
     </form>
     {% endblock %}
+
+
+    <!--<div class="contaiver-fliud">
+        <div class="col-md-offset-3 col-md-5">
+            <form action="product" method="GET" autocomplete="off">
+                <h3 class="page-header text-prinary text-center">Product</h3>
+                <div class="form-group">
+                    <label for="">Mobile</label>
+                    <input type="text" class="form-control" name="moblie">
+                </div>
+                <div class="form-group">
+                    <label for="">Keyboard</label>
+                    <input type="text" class="form-control" name="Keyboard">
+                </div>
+                <div class="form-group">
+                    <label for="">Monitor</label>
+                    <input type="text" class="form-control" name="monitor">
+                </div>
+                <div class="form-group pull-right">
+                    <input type="submit" value="Submit" class="btn btn-success">
+                </div>
+
+            </form>
+        </div>
+    </div>-->
 </body>
+
 </html>

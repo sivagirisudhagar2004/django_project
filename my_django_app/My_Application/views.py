@@ -17,22 +17,26 @@ def users(request):
 def home(request):
     return render(request,"Home.html",{'Name':'Sivagiri'})
 """
-"""""
+
 def home (request):
-    
+ """""   
     result = os.path.join(BASE_DIR,"templates")
     print(result)
 
-    return render(request,"home.html",{'Name':'Sathya'})
+
+ return render(request,"home.html",{'Name':'Sathya'})
+"""""
+ return render(request,'Home.html')
 
 def product(request):
-    mobile = int(request.GET["mobile"])
-    keyboard = int(request.GET["keyboard"])
-    monitor = int(request.GET["monitor"])
-    price = (mobile + keyboard + monitor)
+    Mobile = int(request.GET["mobile"])
+    Keyboard = int(request.GET["keyboard"])
+    Monitor = int(request.GET["monitor"])
+    price = (Mobile + Keyboard + Monitor)
 
     return render(request,"result.html",{'price':price})
 
 """""
 def home(request):
     return render(request,"home_1.html")
+"""""
