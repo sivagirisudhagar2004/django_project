@@ -20,6 +20,6 @@ from My_Application import views
 
 urlpatterns = [
     path('',views.home),
-    path('product',views.product)
+    
     
 ]
