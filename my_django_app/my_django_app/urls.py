@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Message import views
-
+"""""
 urlpatterns = [
     path('admin/',admin.site.urls),
     path('',views.message,name = "Message"),
@@ -30,5 +30,3 @@ urlpatterns = [
     
 ]
 """""
-path('product',views.product,name="Product")
-"""
