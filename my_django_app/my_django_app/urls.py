@@ -16,10 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from My_Application import views
+from Message import views
 
 urlpatterns = [
-    path('',views.home),
+    path('admin/',admin.site.urls),
+    path('',views.message,name = "Message"),
+    path('success/',views.success,name = "Success"),
+    path('info/',views.info, name = "Info"),
+    path('error/',views.error, name = "Danger"),
+    path('warning/',views.warning, name = "Warning")
+
     
     
 ]
+"""""
+path('product',views.product,name="Product")
+"""
